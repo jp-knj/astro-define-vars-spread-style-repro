@@ -1,0 +1,12 @@
+---
+const { id, style, ...props } = Astro.props;
+const colour = 'yellow';
+---
+<div id={id} class="box" style={style} {...props}><slot /></div>
+<style define:vars={{ colour }}>
+  .box {
+    width: 240px;
+    padding: 1rem;
+    border: 4px solid var(--colour);
+  }
+</style>

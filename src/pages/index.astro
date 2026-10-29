@@ -1,0 +1,20 @@
+---
+import SpreadBox from '../components/SpreadBox.astro';
+import ExplicitBox from '../components/ExplicitBox.astro';
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>define:vars with forwarded style props</title>
+  </head>
+  <body>
+    <h1>define:vars with forwarded style props</h1>
+    <h2>No style prop: yellow border works</h2>
+    <SpreadBox id="no-style">Control without a style prop</SpreadBox>
+    <h2>Style prop forwarded by spread: yellow border is lost</h2>
+    <SpreadBox id="spread-string" style="background-color: green">String style prop</SpreadBox>
+    <SpreadBox id="spread-object" style={{ backgroundColor: 'green' }}>Object style prop</SpreadBox>
+    <h2>Explicit style attribute: yellow border works</h2>
+    <ExplicitBox id="explicit" style="background-color: green">Explicit style control</ExplicitBox>
+  </body>
+</html>

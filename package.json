@@ -1,0 +1,21 @@
+{
+  "name": "astro-define-vars-spread-style-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.6.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "astro build",
+    "repro": "npm run build && node check-output.mjs"
+  },
+  "dependencies": {
+    "@astrojs/compiler-rs": "0.5.2",
+    "astro": "7.4.2"
+  },
+  "overrides": {
+    "@astrojs/compiler-rs": "0.5.2"
+  }
+}

@@ -1,0 +1,31 @@
+
+> astro-define-vars-spread-style-repro@0.0.0 repro
+> npm run build && node check-output.mjs
+
+
+> astro-define-vars-spread-style-repro@0.0.0 build
+> astro build
+
+15:56:03 [types] Generated 38ms
+15:56:03 [build] output: "static"
+15:56:03 [build] mode: "static"
+15:56:03 [build] directory: /private/tmp/astro-define-vars-spread-style-repro/dist/
+15:56:03 [build] Collecting build info...
+15:56:03 [build] ✓ Completed in 48ms.
+15:56:03 [build] Building static entrypoints...
+15:56:03 [vite] ✓ built in 132ms
+15:56:03 [vite] ✓ built in 7ms
+15:56:03 [build] Rearranging server assets...
+
+ generating static routes
+15:56:03   ├─ /index.html (+8ms)
+15:56:03 ✓ Completed in 15ms.
+
+15:56:03 [build] ✓ Completed in 174ms.
+15:56:03 [build] 1 page(s) built in 223ms
+15:56:03 [build] Complete!
+{"id":"no-style","styles":["--colour: yellow;"],"merged":true,"tag":"<div id=\"no-style\" class=\"box\" style=\"--colour: yellow;\" data-astro-cid-64hjfoqh>"}
+{"id":"spread-string","styles":["background-color: green","--colour: yellow;"],"merged":false,"tag":"<div id=\"spread-string\" class=\"box\" style=\"background-color: green\" style=\"--colour: yellow;\" data-astro-cid-64hjfoqh>"}
+{"id":"spread-object","styles":["background-color:green","--colour: yellow;"],"merged":false,"tag":"<div id=\"spread-object\" class=\"box\" style=\"background-color:green\" style=\"--colour: yellow;\" data-astro-cid-64hjfoqh>"}
+{"id":"explicit","styles":["background-color: green; --colour: yellow;"],"merged":true,"tag":"<div id=\"explicit\" class=\"box\" style=\"background-color: green; --colour: yellow;\" data-astro-cid-7uwrlz23>"}
+Reproduced: 2 boxes have conflicting style attributes instead of one merged style.

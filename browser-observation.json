@@ -1,0 +1,34 @@
+[
+  {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderStyle": "solid",
+    "borderWidth": "4px",
+    "colourVariable": "yellow",
+    "id": "no-style",
+    "styleAttribute": "--colour: yellow;"
+  },
+  {
+    "backgroundColor": "rgb(0, 128, 0)",
+    "borderStyle": "none",
+    "borderWidth": "0px",
+    "colourVariable": "",
+    "id": "spread-string",
+    "styleAttribute": "background-color: green"
+  },
+  {
+    "backgroundColor": "rgb(0, 128, 0)",
+    "borderStyle": "none",
+    "borderWidth": "0px",
+    "colourVariable": "",
+    "id": "spread-object",
+    "styleAttribute": "background-color:green"
+  },
+  {
+    "backgroundColor": "rgb(0, 128, 0)",
+    "borderStyle": "solid",
+    "borderWidth": "4px",
+    "colourVariable": "yellow",
+    "id": "explicit",
+    "styleAttribute": "background-color: green; --colour: yellow;"
+  }
+]
